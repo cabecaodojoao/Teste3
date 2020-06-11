@@ -12,6 +12,7 @@
 			height: 40px;
 			display: inline-block;
 			text-align: center;
+			margin: 15px;
 			line-height: 40px
 			font-size:25px;
 			position: relative;
@@ -39,27 +40,66 @@
 			.menu ul ul li:hover{
 				background-color: #836FFF;
 			}
-			img.eu{
-				margin-left: 320px;
-				border-radius: 100px;
+			.social-media{
+				width: 70vw;
+  				display: flex;
+  				justify-content: space-around;
+ 				 margin: 4vh auto 0 auto;
+			}
+			.container-subheader .profile-photo {
+  				display: flex;
+  				margin: 0 auto 1vh auto;
+  				max-height: 200px;
+  				max-width: 200px;
+ 			 border-radius: 50%;
+			}
+			.container-subheader .social-media a {
+ 				 width: 50px;
+ 				 height: 50px;
+ 				 display: flex;
+ 				 justify-content: center;
+ 				 border-radius: 7px;
+ 				 transition: box-shadow 0.3s;
 			}
 		</style>
 	</head>
-	
+	<div class="container-subheader">
+        <div id="about"></div>
+        <div class="subheader">
+            <img src="0.jpg" alt="Imagem de parfil" class="profile-photo">
+            <h2>Joao Claudio</h2>
+            <p class="bio">
+                Information System student, web developer and in love with everything about code.
+            </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/joaoclaudiolobato/" target="_blank">
+                    <img src="imagens/logo-linkedin.svg" alt="LinkedIn logo" class="icon">
+                </a>
+            </div>
+        </div>
 
 	<body>
 		<nav class="menu">
 			<ul>			
-				<li>Home</li>
-				<li>About	</li>
+				<li><a href="https://www.google.com"> Home </a></li>
+				<li>About</li>
 				<li>Projects</li>
 				<li>Curriculum</li>
 			</ul>
 		</nav>
-		<header>
-            <h1> </h1>
-			<img class = "eu" src="0.jpg" alt="">
-        </header>
+		<p>Um estudante de e</p>
+		<article>
+            <h2>Acompanhamento Produtividade do TJAM no Teletrabalho</h2>
+            <img class="lado" src="imagens/Produtividade 27d capa.jpg" alt="Produtividade TJAM">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit non nesciunt illo. Quam exercitationem laboriosam beatae illo, repellendus, maxime, laborum eligendi magnam iure placeat nobis? Pariatur maxime iste aspernatur.</p>
+            <p><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA">Acesse a Produtividade</a></p>
+        </article>
+        <article>
+            <h2>Georeferenciamento da meta 08 no Amazonas</h2>
+            <img class="lado" src="imagens/geo.jpg" alt="Geo">
+            <p>Texto artigo 02 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam at dicta fugit temporibus. Accusantium hic, necessitatibus, deserunt autem asperiores nam, quod consequuntur labore maiores aperiam sed vel a repudiandae excepturi.</p>
+            <p><a href="">Acesse o Georeferenciamento</a></p>
+        </article>
 	</body>
 </html>
 	
