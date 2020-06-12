@@ -24,11 +24,11 @@
 			.menu ul{
 				padding: 0;
 				position: absolute;
-				top: 00px;
-				left: 280px;
-            }
+				top: -5px;
+				left: 280px;            }
             *{
-				background-color: white;
+				background-color :white;
+				box-shadow:0px 0px 0px black;
 			}
 			.menu ul ul{
 				display: none
@@ -47,6 +47,7 @@
 			.social-media{
 				width: 70vw;
   				display: flex;
+				background-color: black;
   				justify-content: space-around;
  				 margin: 4vh auto 0 auto;
 			}
@@ -68,23 +69,51 @@
 			.container-subheader .bio{
 				justify-content: center;
 				display: flex;
-				background-color: white;
+				background-color: black;
+				border-bottom: 1px white solid;
+				color: white;
 			}
 			.container-subheader {
-  				background-color: black;
+  				background-color:black;
 				  padding: 10vh 0;
 			}
 			.menu{
 				display: block;
+				background-color: black;
 			}
-			
+
+			.artigos{
+				width: 800px;
+				padding: 100px;
+				margin: 20px auto 20px auto;
+				box-shadow: 0px 0px 10px grey;
+				background-color: white;
+			}
+			.subheader{
+				background-color: black;
+			}
+			.meu-nome{
+				background-color: blue;
+				text-align: center;
+				color: white;
+			}
+			.sobre-mim{
+				color: white;
+				background-color: black;
+			}
+			.footer{
+				background-color: red;
+				text-align: center;
+				font-family:cursive;
+				height: 20px;
+			}
 		</style>
 	</head>
 	<div class="container-subheader">
         <div id="about"></div>
         <div class="subheader">
             <img src="0.jpg" alt="Imagem de parfil" class="profile-photo">
-            <h2>João Claudio da Silva Araujo Lobato</h2>
+            <h2 class="meu-nome">João Claudio da Silva Araujo Lobato</h2>
             <p class="bio">
                 Estudante de Estatística, Skateboarder e entusiasta de programação. Sinta-se a vontade para conhecer mais sobre mim e meus projetos.
             </p>
@@ -99,24 +128,32 @@
 		<nav class="menu">
 			<ul>			
 				<li><a href="https://www.google.com"> Home </a></li>
-				<li>About</li>
-				<li>Projects</li>
+				<li><a href="#About"> About </a></li>
+				<li><a href="#Projects"> Projects </a></li>
 				<li>Curriculum</li>
 			</ul>
+		<div id="About"></div>
 		</nav>
-		<p>Um estudante de e</p>
-		<article>
-            <h2>Acompanhamento Produtividade do TJAM no Teletrabalho</h2>
-            <img class="lado" src="imagens/Produtividade 27d capa.jpg" alt="Produtividade TJAM">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit non nesciunt illo. Quam exercitationem laboriosam beatae illo, repellendus, maxime, laborum eligendi magnam iure placeat nobis? Pariatur maxime iste aspernatur.</p>
-            <p><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA">Acesse a Produtividade</a></p>
-        </article>
-        <article>
-            <h2>Georeferenciamento da meta 08 no Amazonas</h2>
-            <img class="lado" src="imagens/geo.jpg" alt="Geo">
-            <p>Texto artigo 02 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam at dicta fugit temporibus. Accusantium hic, necessitatibus, deserunt autem asperiores nam, quod consequuntur labore maiores aperiam sed vel a repudiandae excepturi.</p>
-            <p><a href="">Acesse o Georeferenciamento</a></p>
-        </article>
+		<p class="sobre-mim">A student of Statistics currently on internship at Tribunal do Estado do Amazonas.</p>
+		<div id="Projects" ></div>
+		<nav class= "artigos"> 
+			<article>
+       		 <h2>Acompanhamento Produtividade do TJAM no Teletrabalho</h2>
+        	 <img class="lado" src="imagens/Produtividade 27d capa.jpg" alt="Produtividade TJAM">
+    	     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit non nesciunt illo. Quam exercitationem laboriosam beatae illo, repellendus, maxime, laborum eligendi magnam iure placeat nobis? Pariatur maxime iste aspernatur.</p>
+        	   <p><a href="https://www.cnj.jus.br/am-justica-profere-1454-mil-sentencas-e-decisoes-em-11-semanas-de-trabalho-remoto/">Acesse a Produtividade</a></p>
+    		  </article>
+    	  	<article>	
+	            <h2>Georeferenciamento da meta 08 no Amazonas</h2>
+	            <img class="lado" src="imagens/geo.jpg" alt="Geo">
+    	        <p>Texto artigo 02 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam at dicta fugit temporibus. Accusantium hic, necessitatibus, deserunt autem asperiores nam, quod consequuntur labore maiores aperiam sed vel a repudiandae excepturi.</p>
+    	        <p><a href="https://www.google.com">Acesse o Georeferenciamento</a></p>
+			</article>
+		</nav>
+		<footer class="footer">
+			<p>Developed by João Claudio Lobato</p>
+			<p>2020 - jcsa.lobato@gmail.com</p>
+		</footer>	
 	</body>
 </html>
 	
